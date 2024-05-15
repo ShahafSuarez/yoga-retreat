@@ -20,7 +20,7 @@
 
 #home {
   height: 100vh;
-  background-image: url("/assets/images/yoga-re.jpg");
+  background-image: url("./images/yoga-re.jpg");
   background-position: center;
   padding: 1rem 4rem;
 }
