@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-position: inside;
+  background-repeat: no-repeat;
+  font-family: "Arimo", sans-serif;
+  font-size: 1rem;
+  color: #2f2303;
+
+  /* site colors
+  #f18c7d - Orange
+  #1c0d18 - Dark/Text
+  #2f2303 - Brown-Dark/Text2
+  #e3f2e7 - Light
+  #b3ddc0 - bright green
+  #71c4a4 - Green */
+}
+
+#home {
+  height: 100vh;
+  background-image: url("/assets/images/yoga-re.jpg");
+  background-position: center;
+  padding: 1rem 4rem;
+}
+
+#details {
+  height: 100vh;
+  background-image: url("/assets/images/details-bg.jpg");
+  background-position: center;
+  padding: 1rem 4rem;
+}
+
+#schedule nav {
+  position: absolute;
+  padding: 1rem 4rem;
+  width: 100%;
+}
+
+#schedule footer {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+}
+
+main.schedule {
+  height: 100vh;
+  background-image: url("/assets/images/schedule-bg-top.png");
+  background-position: center;
+  padding: 1rem 4rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.h-scroll {
+  position: absolute;
+  top: 11%;
+  left: 0;
+  width: 665px;
+  height: 100vw;
+  transform: rotate(-90deg) translateY(-665px);
+  transform-origin: top right;
+  overflow-x: hidden;
+  overflow-y: auto;
+  counter-reset: offset;
+  z-index: -10;
+}
+
+.h-scroll div {
+  counter-increment: offset;
+  width: 100%;
+  height: 665px;
+  transform: rotate(90deg);
+  margin: 10px 0;
+}
+
+/*  */
+
+h1 {
+  font-size: 7.5em;
+  font-weight: 200;
+  font-family: "Assistant", sans-serif;
+  line-height: 5.5rem;
+  color: #f18c7d;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  opacity: 40%;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  color: #2f2303;
+}
+
+nav li a {
+  font-size: 1.25rem;
+}
+
+nav button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #2f2303;
+}
+/* nav. */
+
+/* main */
+/* home */
+main.home section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  gap: 6rem;
+}
+
+main.home div {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+}
+
+main.home div h1:first-child {
+  align-self: end;
+}
+
+main.home div h1:last-child {
+  align-self: start;
+}
+
+main.home a {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #e3f2e7;
+}
+/* home. */
+
+/* details */
+main.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  gap: 1rem;
+}
+
+.p-hide {
+  direction: rtl;
+  position: relative;
+  width: 35%;
+  margin-right: 22%;
+}
+
+.p-hide-scroll {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.text-box {
+  font-size: 1.25rem;
+}
+
+.fade {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #e9e4e0;
+  background: -moz-linear-gradient(0deg, #e9e4e0 0%, #ffffff00 77%);
+  background: -webkit-linear-gradient(0deg, #e9e4e0 0%, #ffffff00 77%);
+  background: linear-gradient(0deg, #e9e4e0 0%, #ffffff00 77%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+
+.p-hide-scroll::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+main div.scroll {
+  color: #2f2303;
+  margin-right: 22%;
+  margin-top: -4%;
+  z-index: 10;
+  pointer-events: none;
+}
+/* details. */
+/* main. */
+
+/* footer */
+footer {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 6.5%;
+  padding-left: 6%;
+}
+
+footer div {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #f18c7d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* footer. */
